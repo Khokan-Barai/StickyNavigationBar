@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="" class="logo">Logo</a>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Protfolio</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </header>
+
+    
+    <section class="banner">
+        <div class="contant">
+            <h2>Welcome</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur delectus exercitationem quod voluptates corporis aperiam!</p>
+            <div>
+                <button>Learm more</button>
+                <button>Call now</button>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+</html>
